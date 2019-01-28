@@ -1,14 +1,11 @@
 import React from 'react';
 import { Button, View, Text,StyleSheet } from 'react-native';
 
-export default class Cart extends React.Component {
-  static navigationOptions = {
-    title: 'Cart'
-   };
+export default class Signin extends React.Component {
  render() {
  return (
   <View style = {styles.container}>
-    <Text>Cart Screen</Text>
+
   </View>
 );
 }
@@ -19,6 +16,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   }
 })
