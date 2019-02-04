@@ -15,7 +15,7 @@ export default class NoPayment extends React.Component {
         <TouchableOpacity
           style={styles.close}
           onPress={() => {
-            this.props.navigation.navigate("Profile");
+            this.props.navigation.navigate("Store");
           }}
         >
           <Icon name="close" color="tomato" />

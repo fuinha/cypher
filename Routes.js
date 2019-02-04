@@ -22,6 +22,9 @@ const SettingsStack = createStackNavigator(
     Settings: {
       screen: Settings,
     },
+    Signin:{
+      screen: Signin,
+    },
     About: {
       screen: About,
     },
@@ -41,7 +44,10 @@ const SettingsStack = createStackNavigator(
   }
 );
 
-const Cart = createStackNavigator({
+const StoreStack = createStackNavigator({
+    Store: {
+      screen: Store
+    },
     Expenses: {
       screen: Expenses
     },
@@ -78,23 +84,11 @@ export default MyNewProject = createBottomTabNavigator(
       },
     },
     Store: {
-      screen: Store,
+      screen: StoreStack,
       navigationOptions: {
         tabBarIcon: ({ focused }) => (
           <FontAwesome
             name="shopping-bag"
-            size={20}
-            color={focused ? "white" : "#657091"}
-          />
-        ),
-      },
-    },
-    Cart:{
-      screen: Cart,
-      navigationOptions: {
-        tabBarIcon: ({ focused }) => (
-          <FontAwesome
-            name="shopping-cart"
             size={20}
             color={focused ? "white" : "#657091"}
           />

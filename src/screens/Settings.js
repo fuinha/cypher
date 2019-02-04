@@ -22,7 +22,7 @@ export default class Settings extends React.Component {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.inline}
-          onPress={() => this.props.navigation.navigate("Profile")}
+          onPress={() => this.props.navigation.navigate("Signin")}
         >
           <Text style={styles.text}>{enText.updateProfile}</Text>
           <Icon
