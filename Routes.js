@@ -14,7 +14,7 @@ import Contact from "./src/screens/Contact";
 import ChangeLanguage from "./src/screens/ChangeLanguage";
 import Signin from "./src/screens/Signin";
 import Payment from "./src/screens/Payment";
-import NoPayment from "./src/screens/NoPayment";
+import PaymentOptions from "./src/screens/PaymentOptions";
 
 
 const SettingsStack = createStackNavigator(
@@ -54,8 +54,8 @@ const StoreStack = createStackNavigator({
     Payment: {
       screen: Payment
     },
-    NoPayment: {
-      screen: NoPayment
+    PaymentOptions: {
+      screen: PaymentOptions
     },
     Address:{
       screen: Address

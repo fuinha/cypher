@@ -12,7 +12,6 @@ export default class Expenses extends React.Component {
     const multiplier = 1;
     const { navigation } = this.props;
     const data = navigation.getParam("data");
-    console.log(data, "works ");
     const total = data.reduce(function(previousValue, currentValue) {
       return {
         id: previousValue.id * multiplier + currentValue.id * multiplier,

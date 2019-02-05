@@ -68,7 +68,6 @@ export default class Store extends React.Component {
   goToStore = () => {
     const data = this.state.dataSource;
     const selectedItems = data.filter(item => item.isSelect);
-    console.log(selectedItems.length);
     if (selectedItems.length === 0) {
       Alert.alert("Cart is empty", "Please select an item first");
     } else {
@@ -105,7 +104,6 @@ export default class Store extends React.Component {
         </View>
       );
     }
-    console.log(this.state.updatedList, "update");
 
     return (
       <View style={styles.container}>

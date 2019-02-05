@@ -27,13 +27,13 @@ export default class Payment extends React.Component {
   }
 
   selectedLanguage = () => {
-    this.props.navigation.navigate("NoPayment", {
-      option: this.state.option[this.state.valueIndex].label
+    this.props.navigation.navigate("PaymentOptions", {
+      option: this.state.option[this.state.valueIndex].label,
+      value: this.state.option[this.state.valueIndex].value
     });
   };
 
   render() {
-    console.log(this.state.label);
     return (
       <View style={styles.container}>
         <Text style={styles.title}>{enText.payment}</Text>

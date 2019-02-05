@@ -55,7 +55,7 @@ export default class Address extends React.Component {
   };
 
   updateAddress = () => {
-    console.log("Update is working");
+    
   };
 
   render() {

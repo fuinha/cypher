@@ -61,7 +61,8 @@ const styles = StyleSheet.create({
     color: "#fff"
   },
   name:{
-    fontSize: 36,
+    fontSize: 26,
+    paddingVertical: 10,
     color: "#fff"
   },
   close: {

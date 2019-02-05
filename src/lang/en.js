@@ -10,7 +10,8 @@ export const enText = {
   choice: "Sorry! You chose",
   paymentOptions: "as a payment option",
   payment: "Choose Payment options",
-  noPayment:"This option is not available in your area",
+  PaymentOptions:"This option is not available in your area",
+  success: "Congrats your product will be delivered soon",
   contact: "Add your delivery details here:",
   review: "Review Address",
   submit: "Submit",
@@ -21,6 +22,7 @@ export const enText = {
   contact: "Contact Us",
   changeLanguage: "Change Language",
   updateProfile : " Update Profile",
+  goBack: "Go back to Store",
   en: "English",
   span: "Spanish",
   hin: "Hindi"

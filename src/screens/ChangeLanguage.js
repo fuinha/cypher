@@ -19,7 +19,6 @@ export default class ChangeLanguage extends React.Component {
   }
 
   selectedLanguage = () => {
-    console.log(this.state.value);
     this.props.navigation.navigate("Settings");
   };
 
