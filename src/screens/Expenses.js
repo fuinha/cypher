@@ -1,18 +1,18 @@
-import React from 'react'
-import { View, Text, StyleSheet, ScrollView } from 'react-native'
-import { Button } from 'react-native-elements'
-import { enText } from '../lang/en'
+import React from "react";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { Button } from "react-native-elements";
+import { enText } from "../lang/en";
 
 export default class Expenses extends React.Component {
   static navigationOptions = {
-    title: 'Expenses'
-  }
+    title: "Expenses",
+  };
 
-  render () {
+  render() {
     const multiplier = 1;
     const { navigation } = this.props;
-    const data = navigation.getParam('data');
-    console.log(data, 'works ')
+    const data = navigation.getParam("data");
+    console.log(data, "works ");
     const total = data.reduce(function(previousValue, currentValue) {
       return {
         id: previousValue.id * multiplier + currentValue.id * multiplier,
@@ -48,83 +48,83 @@ export default class Expenses extends React.Component {
           <Text style={styles.price}>{grandTotal.toFixed(2)} &#8377;</Text>
         </View>
         <Button
-          backgroundColor='#517fa4'
-          icon={{ name: 'credit-card' }}
+          backgroundColor="#517fa4"
+          icon={{ name: "credit-card" }}
           title={enText.payment}
-          type='ionicon'
-          onPress={() => this.props.navigation.navigate('Payment')}
+          type="ionicon"
+          onPress={() => this.props.navigation.navigate("Payment")}
           containerViewStyle={{ marginTop: 10 }}
         />
         <Button
-          backgroundColor='#517fa4'
-          icon={{ name: 'assignment' }}
+          backgroundColor="#517fa4"
+          icon={{ name: "assignment" }}
           title={enText.addAddress}
-          type='ionicon'
-          onPress={() => this.props.navigation.navigate('Address')}
+          type="ionicon"
+          onPress={() => this.props.navigation.navigate("Address")}
           containerViewStyle={{ marginTop: 10 }}
         />
       </View>
-    )
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#192338',
+    backgroundColor: "#192338",
     flex: 1,
     paddingVertical: 50,
-    position: 'relative'
+    position: "relative",
   },
   title: {
     fontSize: 20,
-    color: '#517fa4',
-    textAlign: 'center',
-    marginBottom: 10
+    color: "#fff",
+    textAlign: "center",
+    marginBottom: 10,
   },
   total: {
-    width: '100%',
+    width: "100%",
     paddingHorizontal: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 30
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 30,
   },
   inline: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     paddingVertical: 3,
     paddingHorizontal: 20,
-    marginBottom: 10
+    marginBottom: 10,
   },
   totaltext: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 16,
-    paddingVertical: 1
+    paddingVertical: 1,
   },
   text: {
-    color: '#fff',
-    textAlign: 'left',
+    color: "#fff",
+    textAlign: "left",
     width: 150,
     fontSize: 12,
-    paddingVertical: 1
+    paddingVertical: 1,
   },
   price: {
-    color: '#fff',
-    textAlign: 'right',
+    color: "#fff",
+    textAlign: "right",
     fontSize: 18,
-    paddingVertical: 2
+    paddingVertical: 2,
   },
   list: {
     margin: 20,
-    marginTop: 30
+    marginTop: 30,
   },
   content: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     borderBottomWidth: 1,
-    borderBottomColor: '#f7f7f7',
-    paddingVertical: 5
-  }
-})
+    borderBottomColor: "#f7f7f7",
+    paddingVertical: 5,
+  },
+});

@@ -69,12 +69,12 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    color: "#517fa4",
+    color: "#fff",
     paddingHorizontal: 20,
   },
   title: {
     fontSize: 20,
-    color: "#517fa4",
+    color: "#fff",
     textAlign: "center",
     marginBottom: 10,
   },

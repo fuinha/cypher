@@ -8,16 +8,23 @@ export default class About extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>{enText.about}</Text>
-        <View>
+        <View style={styles.content}>
           <Text style={styles.text}>
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-
+            This app is basically a prototype of an online store app, where a
+            user can simply sign in and choose items from the list and go ahead
+            to choose the mode of payment and update there address for delivery.
+            This app also contains the feature to change the language depending
+            on the zone in which the app will be used. In future we might add
+            the feature to make payment and various other advanced features
+            required in an online store app. Feel free to provide us any
+            feedback if there is any and let us help to build a better world
+            together.
           </Text>
         </View>
         <TouchableOpacity
           style={styles.close}
           onPress={() => {
-            this.props.navigation.navigate('Settings');
+            this.props.navigation.navigate("Settings");
           }}
         >
           <Icon name="close" color="#fff" />
@@ -33,18 +40,25 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 50,
     paddingHorizontal: 10,
-    position: "relative"
+    position: "relative",
   },
   title: {
     fontSize: 20,
-    color: "#517fa4",
+    color: "#fff",
     textAlign: "center",
     marginBottom: 20,
   },
+  content: {
+    backgroundColor: "#FA7B5F",
+    borderTopRightRadius: 35,
+    borderBottomLeftRadius: 35,
+    marginTop: 30,
+    padding: 10,
+  },
   text: {
     fontSize: 16,
-    color: "#f7f7f7",
-    paddingHorizontal: 20,
+    padding: 10,
+    color: "#fff"
   },
   close: {
     fontSize: 30,
